@@ -30,14 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (clickCount === 9) {
       hola.textContent = `Cuando no estoy contigo, realmente siento que me falta algo, como si no tuviera todo lo que necesito para vivir como me gustaría.`;
     } else if (clickCount === 10) {
-      hola.textContent = `Te amo millones, espero poder seguir compartiendo mi vida contigo y que tu compartas la tuya conmigo, estoy muy feliz de haber conocido a la Sofia foranea que seguia en la uni y le gustaban las mismas canciones que a mi`;
-    } else if (clickCount === 10) {
-      hola.textContent = `Soy el más feliz de haber conocido a la Sofía foránea que estaba cursando la uni y le gustaban las mismas canciones que a mí.`;
+      hola.textContent = `Te amo millones, espero poder seguir compartiendo mi vida contigo y que tu compartas la tuya conmigo.`;
     } else if (clickCount === 11) {
-      hola.textContent = `Y soy el más orgulloso de la Sofía en la que te has convertido: igual de auténtica, divertida, interesante, encantadora, guapa, una compañía increíble, excelente besadora y con una voz que podría escuchar todo el día`;
+      hola.textContent = `Soy el más feliz de haber conocido a la Sofía foránea que estaba cursando la uni y le gustaban las mismas canciones que a mí.`;
     } else if (clickCount === 12) {
-      hola.textContent = `Solo quiero decirte que...`;
+      hola.textContent = `Y soy el más orgulloso de la Sofía en la que te has convertido: igual de auténtica, divertida, interesante, encantadora, guapa, una compañía increíble, excelente besadora y con una voz que podría escuchar todo el día.`;
     } else if (clickCount === 13) {
+      hola.textContent = `Solo quiero decirte que...`;
+    } else if (clickCount === 14) {
       hola.classList.remove("text-justify");
       hola.classList.add("text-center");
       hola.textContent = `Te amo, gracias por todo`;
