@@ -167,17 +167,11 @@
   .absolute {
     position: absolute;
   }
-  .relative {
-    position: relative;
-  }
   .-top-100 {
     top: calc(var(--spacing) * -100);
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
-  }
-  .top-5 {
-    top: calc(var(--spacing) * 5);
   }
   .top-40 {
     top: calc(var(--spacing) * 40);
@@ -190,6 +184,9 @@
   }
   .top-100 {
     top: calc(var(--spacing) * 100);
+  }
+  .top-110 {
+    top: calc(var(--spacing) * 110);
   }
   .-bottom-100 {
     bottom: calc(var(--spacing) * -100);
