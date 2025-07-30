@@ -36,7 +36,25 @@ const rCollage = new rive.Rive({
   },
 });
 
-canvasSaludo.addEventListener("mouseup", () => {
+canvasSaludo.addEventListener("mouseup", handleInteraction);
+// canvasSaludo.addEventListener("touchstart", touchStartInteraction);
+canvasSaludo.addEventListener("touchend", touchInteraction);
+
+// function touchStartInteraction() {
+//   // rSaludo.play()
+// }
+
+function touchInteraction() {
+  rSaludo.play("clickUp");
+  setTimeout(() => {
+    canvasCollage.style.display = "block";
+    rCollage.play();
+  }, 500);
+  setTimeout(() => {
+    canvasSaludo.style.display = "none";
+  }, 1500);
+}
+function handleInteraction() {
   setTimeout(() => {
     canvasCollage.style.display = "block";
     rCollage.play();
@@ -44,4 +62,4 @@ canvasSaludo.addEventListener("mouseup", () => {
   setTimeout(() => {
     canvasSaludo.style.display = "none";
   }, 1500);
-});
+}
