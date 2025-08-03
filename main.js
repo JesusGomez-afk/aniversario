@@ -1,5 +1,6 @@
 const canvasSaludo = document.getElementById("canvasSaludo");
 const canvasCollage = document.getElementById("canvasCollage");
+const youtubeVideo = document.getElementById("youtubeVideo");
 
 const layoutSaludo = new rive.Layout({
   fit: rive.Fit.ScaleDown,
@@ -40,9 +41,7 @@ canvasSaludo.addEventListener("mouseup", handleInteraction);
 // canvasSaludo.addEventListener("touchstart", touchStartInteraction);
 canvasSaludo.addEventListener("touchend", touchInteraction);
 
-// function touchStartInteraction() {
-//   // rSaludo.play()
-// }
+canvasCollage.addEventListener("click", showVideoWithTransition);
 
 function touchInteraction() {
   rSaludo.play("clickUp");
@@ -53,7 +52,11 @@ function touchInteraction() {
   setTimeout(() => {
     canvasSaludo.style.display = "none";
   }, 1500);
+  setTimeout(() => {
+    youtubeVideo.style.visibility = "visible";
+  }, 3000);
 }
+
 function handleInteraction() {
   setTimeout(() => {
     canvasCollage.style.display = "block";
@@ -62,4 +65,16 @@ function handleInteraction() {
   setTimeout(() => {
     canvasSaludo.style.display = "none";
   }, 1500);
+  setTimeout(() => {
+    youtubeVideo.style.visibility = "visible";
+  }, 3000);
+}
+
+function showVideoWithTransition() {
+  setTimeout(() => {
+    canvasCollage.style.display = "none";
+    youtubeVideo.style.transition = "opacity 1s ease-in-out";
+    youtubeVideo.style.opacity = "1";
+    youtubeVideo.style.visibility = "visible";
+  }, 3000);
 }

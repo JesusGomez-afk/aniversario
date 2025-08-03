@@ -49,11 +49,35 @@
         transform: translate(-50%, -50%);
         /* outline: red 1px solid; */
       }
+
+      #youtubeVideo {
+        width: 640px;
+        height: 360px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0; /* Initial opacity for transition */
+      }
     </style>
     <div id="canvasContainer">
       <canvas id="canvasCollage" width="1440" height="1024"></canvas>
       <canvas id="canvasSaludo" width="297" height="223"></canvas>
     </div>
+    <iframe
+      id="youtubeVideo"
+      width="640"
+      height="360"
+      src="https://www.youtube.com/embed/u7Lea-NhHLE"
+      title="Node.js ya entiende TypeScript"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
     <script src="https://unpkg.com/@rive-app/canvas"></script>
     <script type="module" src="main.js"></script>
   </body>
