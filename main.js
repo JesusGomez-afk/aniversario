@@ -42,6 +42,7 @@ canvasSaludo.addEventListener("mouseup", handleInteraction);
 canvasSaludo.addEventListener("touchend", touchInteraction);
 
 canvasCollage.addEventListener("click", showVideoWithTransition);
+canvasCollage.addEventListener("touchend", showVideoWithTransition);
 
 function touchInteraction() {
   rSaludo.play("clickUp");
